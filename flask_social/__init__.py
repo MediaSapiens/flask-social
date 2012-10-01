@@ -10,6 +10,7 @@
     :license: MIT, see LICENSE for more details.
 """
 
+<<<<<<< HEAD
 try:
     import twitter
 except ImportError:
@@ -740,3 +741,10 @@ def do_flash(message, category):
 # Signals
 social_connection_created = _signals.signal("connection-created")
 social_login_failed = _signals.signal("login-failed")
+=======
+from .core import Social
+from .datastore import SQLAlchemyConnectionDatastore, \
+     MongoEngineConnectionDatastore
+from .signals import social_connection_created, social_connection_failed, \
+     social_connection_removed, social_login_failed, social_login_completed
+>>>>>>> 0800b1ea746b4a68c28861d90cb54be86037a1d5

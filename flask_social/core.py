@@ -17,7 +17,7 @@ from werkzeug.local import LocalProxy
 from flask.ext.security.utils import get_url, do_flash
 
 from .utils import get_display_name, config_value, get_config, \
-     get_default_provider_names, get_class_from_string
+    get_default_provider_names, get_class_from_string
 from .views import create_blueprint, login_handler, connect_handler
 
 _security = LocalProxy(lambda: current_app.extensions['security'])

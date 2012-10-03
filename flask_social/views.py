@@ -121,6 +121,7 @@ def connect_handler(cv, user_id=None):
     do_flash(*msg)
     return redirect(redirect_url)
 
+
 @login_required
 def remove_all_connections(provider_id):
     """Remove all connections for the authenticated user to the
